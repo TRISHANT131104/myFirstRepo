@@ -17,9 +17,9 @@ double pow(double x,double y){
 }
 
 
-int factorial(int n){
-    int fResult = 1;
-    for (int fLoopVar = 1; fLoopVar <= n; fLoopVar++)
+long factorial(long n){
+    long fResult = 1;
+    for (long fLoopVar = 1; fLoopVar <= n; fLoopVar++)
     {
         fResult = fResult*fLoopVar;
     }
@@ -97,7 +97,7 @@ switch (op)
         cin>>a;
         cout<<"\nenter the value of second number: ";
         cin>>b;
-        cout<<"\nThe sum of these two numbers is: "<<roundOff(a+b)<<endl;
+        cout<<"\nThe sum of these two numbers is: "<<a+b<<endl;
     break;
     case 2:
         cout<<"please enter two numbers(one at time)\n";
@@ -105,7 +105,7 @@ switch (op)
         cin>>a;
         cout<<"\nenter the value of second number: ";
         cin>>b;
-        cout<<"\nThe difference of these two numbers is: "<<roundOff(a-b)<<endl;
+        cout<<"\nThe difference of these two numbers is: "<<a-b<<endl;
     break;
     case 3:
         cout<<"please enter two numbers(one at time)\n";
@@ -113,7 +113,7 @@ switch (op)
         cin>>a;
         cout<<"\nenter the value of second number: ";
         cin>>b;
-        cout<<"\nThe product of these two numbers is: "<<roundOff(a*b)<<endl;
+        cout<<"\nThe product of these two numbers is: "<<a*b<<endl;
     break;
     case 4:
         cout<<"please enter two numbers(one at time)\n";
@@ -121,7 +121,7 @@ switch (op)
         cin>>a;
         cout<<"\nenter the value of second number: ";
         cin>>b;
-        cout<<"\nThe division of these two numbers is: "<<roundOff(a/b)<<endl;
+        cout<<"\nThe division of these two numbers is: "<<a/b<<endl;
     break;
     case 5:
         cout<<"This operation is going to give you answer for x^y\n";
